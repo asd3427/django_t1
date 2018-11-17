@@ -1,0 +1,276 @@
+@charset "utf-8";
+/*字体图标库*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src:  url('fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'), 
+  		url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
+  		url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+  		url('fonts/glyphicons-halflings-regular.svg') format('svg');
+}
+/*改写bootstrap  body的lineheight*/
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*左浮动标识*/
+.fl_left{
+	float:left;
+}
+/*右浮动标识*/
+.fl_right{
+	float:right;
+}
+/*内容左偏标识*/
+.tx_left{
+	text-align: left;
+}
+/*内容右偏标识*/
+.tx_right{
+	text-align: right;
+}
+/*页面头部*/
+.header {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    -webkit-background-size: cover;
+    text-align: center;
+    min-height: 140px;
+    position: relative;
+}
+/*头部LOGO*/
+.header-left-logo {
+    position: relative;
+    left: 20%;
+    top: 20px;
+}
+/*头部导航文字*/
+.header .title-nav-text{
+    display: inline-block;
+    position: relative;
+    float: left;
+    left: 20%;
+    top: 50px;
+}
+/*页面中间*/
+.main{
+    background: #fff;
+    background-size: cover;
+    min-height: 600px;
+    margin-top: -5px;
+}
+
+/*重写登录按钮框*/
+.btn.btn-default {
+   	border-radius: 1px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #363535;
+}
+/*字体颜色标签*/
+.tx_red{
+	color: #cb0000;
+}
+/*背景颜色标签*/
+.bg_red{
+	background: rgb(209,2,28);
+}
+.bg_white{
+	background: #fff;
+}
+/*边框颜色标签*/
+.bd_grey{
+	background: #E0E0E0;
+}
+/*顶部导航标签*/
+.header .site-nav{
+	height: 32px;
+	line-height: 32px;
+	font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    width: auto;
+    position: relative!important;
+    background: #f2f2f2;
+}
+.header .site-nav a{
+	text-decoration: none;
+	color: #5e5e5e;
+	cursor: pointer;
+}
+.header .site-nav a{
+	text-decoration: none;
+}
+/*顶部右侧菜单栏*/
+.header .site-nav .right-menu-list ul{
+	list-style: none;
+}
+
+.header .site-nav .right-menu-list ul li{
+	float: left;
+	cursor: pointer;
+	margin: 0 10px;
+}
+/*顶部中间图片*/
+.header-middile-logo{
+	 width: 400px;
+}
+/*搜索框*/
+.header .search-box{
+    margin-top: 48px;
+    margin-bottom: 40px;
+    /* overflow: hidden; */
+    width: 320px;
+}
+.search-box .form-control {
+    border: 2px #727272 solid;
+    border-radius: 0;
+}
+.search-box .btn.btn-default {
+	background-color: #474747;
+	width: 90px;
+	height: 36px;
+	line-height: 4px;
+	margin-left: -2px;
+	margin-top: -1px;
+	text-align: center;
+}
+/*搜索框下关键字*/
+.input-group+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+	overflow: hidden;
+	height: 20px;
+}
+.input-group+ul li{
+	float: left;
+    margin-right: 10px;
+    color: #a2a2a2;
+    cursor: pointer;
+}
+/*重写菜单栏navbar样式*/
+.navbar-collapse{
+	padding-left: 0px;
+}
+.navbar-default {
+    background: rgb(58,58,58);
+    background-color: rgb(58,58,58);
+    border-color: rgb(58,58,58);
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a {
+	text-shadow:0 0px 0 rgba(255,255,255,.25);
+	color: #fff;
+	font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #FF0000;
+}
+/*底部菜单*/
+.main-footer{
+	background: #000;
+	height: 400px;
+}
+.main-footer a{
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+.main-footer-title{
+    margin-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px #4d4c4c solid;
+}
+.main-footer .order-email .form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 2px solid #414141;
+}
+.main-footer .order-email .form-control:focus{
+	box-shadow:none;
+}
+.main-footer .order-email .form-control+.glyphicon{
+	  position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #bababa;
+}
+.main-footer .footer-menu{
+	border: none;
+	margin-top: 15px;
+}
+.main-footer .footer-menu th{
+	color: #fff;
+	font-weight: normal;
+	    width: 15.34%;
+}
+.main-footer .footer-menu td{
+	cursor: pointer;
+}
+.main-footer .footer-menu td:hover{
+	color: #fff;
+}
+.main-footer .footer-menu>tbody>tr:nth-of-type(odd){
+	background: transparent;
+}
+.main-footer .footer-menu tbody{
+	color: #979797;
+}
+.main-footer .bottom-horizon-list{
+	color: #979797;
+}
+.main-footer .bottom-horizon-list img{
+	margin-right: 10px;
+}
+.main-footer .bottom-horizon-list a{
+	display: inline-block;
+	color: #979797;
+	margin: 0 10px;	
+}
+.main-footer .bottom-horizon-list p{
+	margin-top: 70px;
+	text-align: center;
+	color: #979797;
+}
+/*重新bootstrap table*/
+.table-responsive{
+    overflow: hidden;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: none;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 5px;
+}
+/*路径导航条*/
+.breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0;
+		color:#3a3a3a
+}
+.breadcrumb a{
+	 	color:#3a3a3a
+}
+.breadcrumb a:hover,.breadcrumb a:active,.breadcrumb a:focus{
+	 text-decoration: none;
+	 font-weight: bold;
+}
+/*改写路径导航条分隔符*/
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
+}
+

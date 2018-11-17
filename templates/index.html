@@ -1,0 +1,141 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap-theme.min.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.min.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/common.css" %}"/>
+		<link rel="stylesheet" href="{% static "css/index.css" %}"/>
+		<title>商城首页</title>
+	</head>
+
+	<body class="paged">
+		{% include "head.html" %}
+		<main class="main" role="main" style="background: url({% static "img/index-main.png" %}) no-repeat center;background-size: cover;"></main>
+		<div class="container referred-brand">
+			<div class="row referred-brand-title">
+				<div class="col-xs-12 col-sm-6 tx_left">
+					<strong>优选品牌</strong> BRAND SALE
+				</div>
+				<div class="col-xs-12 col-sm-6 tx_right">更多 <span class="glyphicon glyphicon-forward" aria-hidden="true"></span></div>
+			</div>
+			<div class="row" id="preferred-brand-list">
+				<div class="col-xs-12 col-sm-4 preferred-brand-item">
+					<a href="detail.html">
+						<img src="{% static "img/perfer_brand1.png" %}" />
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 preferred-brand-item">
+					<a>
+						<img src="{% static "img/perfer_brand2.png" %}" />
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 preferred-brand-item">
+					<a>
+						<img src="{% static "img/perfer_brand3.png" %}" />
+					</a>
+				</div>
+			</div>
+			<div class="row table-responsive">
+				<table class="table table-bordered table-striped preferred-brand-list-small">
+					<tbody>
+						<tr>
+							<td><img src="{% static "img/brandlogo/brand_98.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_100.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_102.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_104.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_106.jpg"%}" /></td>
+						</tr>
+						<tr>
+							<td><img src="{% static "img/brandlogo/brand_125.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_127.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_129.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_131.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_133.jpg"%}" /></td>
+						</tr>
+						<tr>
+							<td><img src="{% static "img/brandlogo/brand_152.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_154.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_156.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_158.jpg"%}" /></td>
+							<td><img src="{% static "img/brandlogo/brand_160.jpg"%}" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row fashion-brand-title">
+				<div class="col-xs-12 col-sm-6 tx_left">
+					<strong>潮流精品</strong> MAN SWEAR
+				</div>
+				<div class="col-xs-12 col-sm-6 tx_right">更多 <span class="glyphicon glyphicon-forward" aria-hidden="true"></span></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_03.png" %}"/>
+					<img src="{% static "img/fashionlogo/cljp_14.png" %}"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_05.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_07.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_09.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_11.png" %}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_16.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-4 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_18.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_20.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_22.png" %}" />
+				</div>
+				<div class="col-xs-12 col-sm-2 fashion-brand-item">
+					<img src="{% static "img/fashionlogo/cljp_24.png" %}" />
+				</div>
+			</div>
+			<div class="row table-responsive">
+				<table class="table table-bordered table-striped fashion-brand-list-small">
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="{% static "img/fashionlogo/cljp_42.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_44.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_46.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_48.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_50.png" %}" /></td>
+						</tr>
+						<tr>
+							<td><img src="{% static "img/fashionlogo/cljp_51.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_53.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_55.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_57.png" %}" /></td>
+							<td><img src="{% static "img/fashionlogo/cljp_59.png" %}" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		{% include "footer.html" %}
+	</body>
+
+</html>

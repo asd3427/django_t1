@@ -1,0 +1,79 @@
+@charset "utf-8";
+.main {
+	margin-bottom: 40px;
+}
+
+/*右边样式*/
+.content-right .addr-box {
+	border: 1px solid rgb(217, 217, 217);
+	min-height: 620px;
+}
+.content-right .addr-box .reminder {
+	background: rgb(250, 246, 217);
+	margin: 10px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+}
+.content-right .addr-box .addr-box-title {
+	background: rgb(239, 239, 239);
+	margin: 10px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+.content-right .addr-box .addr-box-title .glyphicon {
+	margin-right: 10px;
+}
+/*表单*/
+.addr-box-content {
+	padding: 0 10px;
+}
+/*表单label左浮动*/
+.addr-box-content label {
+    float: left;
+    width: 100px;
+    text-align: right;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+}
+/*表单span*/
+.addr-box-content .form-group span {
+	display: inline-block;
+    float: left;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    color: #898989;
+}
+.addr-box-content .form-group span.glyphicon {
+	margin-right: 10px;
+}
+/*表单input样式（覆盖bootstrap）*/
+.addr-box-content .form-control {
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+}
+.addr-box-content select.form-control{
+	width: 120px;
+    display: inline-block;
+}
+/*表单提交按钮*/
+.content-right .addr-box .submit-addr{
+    width: 130px;
+    filter: alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+    -ms-filter: alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=red,endcolorstr=blue,gradientType=0);
+    background: red;
+    background: -moz-linear-gradient(top, red, rgba(0, 0, 255, 0.5));
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 0, 0, 0.78)), to(rgb(214, 1, 36)));
+    background: -o-linear-gradient(top, red, rgba(0, 0, 255, 0.5));
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24);
+    margin-left: 100px;
+}
+.content-right .addr-box .submit-addr .glyphicon {
+	font-size: 5px;
+}

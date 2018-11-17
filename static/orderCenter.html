@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sidebarMenu.css" />
+		<link rel="stylesheet" href="css/orderCenter.css" />
+		<title>订单中心</title>
+	</head>
+	<body class="paged">
+		<iframe marginwidth="0" marginheight="0" style="margin: 0; padding: 0;" frameborder="0" scrolling="no" src="common/head.html" height="227px" width="100%" style="position: absolute;min-height: 227px;"></iframe>
+		<main class="main" role="main">
+			<div class="container order-center">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">个人中心</a>
+					</li>
+					<li class="active">订单中心</li>
+				</ol>
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 sidebar-menu">
+						<h4>个人中心<small>UCENTER</small></h4>
+						<img src="img/UCENTER/U.png" width="100%">
+						<a href="#orderMeun" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>交易管理
+						</a>
+						<ul id="orderMeun" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">我的订单</a>
+							</li>
+							<li>
+								<a href="#">我的收藏</a>
+							</li>
+							<li>
+								<a href="#">我的动脑币</a>
+							</li>
+							<li>
+								<a href="#">我的红包</a>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+							</li>
+							<li>
+								<a href="#">我的邀请好友</a>
+							</li>
+							<li>
+								<a href="#">我的礼品卡</a>
+							</li>
+							<li>
+								<a href="#">我的VIP</a>
+							</li>
+						</ul>
+						<a href="#serviceCenter" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>服务中心
+						</a>
+						<ul id="serviceCenter" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">我的退/换货</a>
+							</li>
+							<li>
+								<a href="#">我的发票</a>
+							</li>
+							<li>
+								<a href="#">我的咨询</a>
+							</li>
+							<li>
+								<a href="#">我的评论</a>
+							</li>
+							<li>
+								<a href="#">我的消息</a>
+							</li>
+							<li>
+								<a href="#">在线客服</a>
+							</li>
+						</ul>
+						<a href="#messMenu" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>个人信息管理
+						</a>
+						<ul id="messMenu" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">编辑个人资料</a>
+							</li>
+							<li>
+								<a href="#">账号安全</a>
+							</li>
+							<li>
+								<a href="#">地址管理</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-10 content-right">
+						<h4>订单中心<small>ORDERS</small><span>VIP金额累计需要订单成功且无退换货</span></h4>
+						<div class="order-box">
+							<div class="reminder">
+								<span class="tx_red">重要提醒：</span> 近期假冒客服诈骗事件频发，有货不会以任何理由向您索取账户密码或引导转账，请您提高警惕，谨防诈骗。
+							</div>
+							<div class="order-tabs" data-example-id="togglable-tabs">
+								<ul id="orderTabs" class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+										<a href="#curr-order" id="curr-order-tab" role="tab" data-toggle="tab" aria-controls="curr-order" aria-expanded="true">现有订单</a>
+									</li>
+									<li role="presentation" class="">
+										<a href="#success-order" id="success-order-tab" role="tab" data-toggle="tab" aria-controls="success-order" aria-expanded="false">成功订单</a>
+									</li>
+									<li role="presentation" class="">
+										<a href="#cancel-order" id="cancel-order-tab" role="tab" data-toggle="tab" aria-controls="cancel-order" aria-expanded="false">已取消订单</a>
+									</li>
+								</ul>
+							</div>
+							<div id="orderContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade active in" id="curr-order" aria-labelledby="curr-order-tab">
+									<div class="row content-title">
+										<div class="col-xs-12 col-sm-4">商品信息</div>
+										<div class="col-xs-12 col-sm-2">单价(元)</div>
+										<div class="col-xs-12 col-sm-1">数量</div>
+										<div class="col-xs-12 col-sm-2">实付款(元)</div>
+										<div class="col-xs-12 col-sm-2">订单状态</div>
+										<div class="col-xs-12 col-sm-1">操作</div>
+									</div>
+									<div class="row content-table">您还没有任何订单！</div>
+									<div class="row tabpanel-foot">共 0 条结果，0/0页</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="success-order" aria-labelledby="success-order-tab">
+									<div class="row content-title">
+										<div class="col-xs-12 col-sm-4">商品信息</div>
+										<div class="col-xs-12 col-sm-2">单价(元)</div>
+										<div class="col-xs-12 col-sm-1">数量</div>
+										<div class="col-xs-12 col-sm-2">实付款(元)</div>
+										<div class="col-xs-12 col-sm-2">订单状态</div>
+										<div class="col-xs-12 col-sm-1">操作</div>
+									</div>
+									<div class="row content-table">您还没有任何订单！</div>
+									<div class="row tabpanel-foot">共 0 条结果，0/0页</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="cancel-order" aria-labelledby="cancel-order-tab">
+									<div class="row content-title">
+										<div class="col-xs-12 col-sm-4">商品信息</div>
+										<div class="col-xs-12 col-sm-2">单价(元)</div>
+										<div class="col-xs-12 col-sm-1">数量</div>
+										<div class="col-xs-12 col-sm-2">实付款(元)</div>
+										<div class="col-xs-12 col-sm-2">订单状态</div>
+										<div class="col-xs-12 col-sm-1">操作</div>
+									</div>
+									<div class="row content-table">您还没有任何订单！</div>
+									<div class="row tabpanel-foot">共 0 条结果，0/0页</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<iframe marginwidth="0" marginheight="0" style="margin: 0; padding: 0;" frameborder="0" scrolling="no" src="common/footer.html" height="400px" width="100%" style="position: absolute;min-height: 400px;"></iframe>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script>
+			$('.sidebar-menu .menu-first').click(function() {
+				if($(this).hasClass('collapsed')) {
+					$(this).find('.glyphicon').removeClass('glyphicon-expand').addClass('glyphicon-collapse-down');
+				} else {
+					$(this).find('.glyphicon').removeClass('glyphicon-collapse-down').addClass('glyphicon-expand');
+				}
+
+			})
+		</script>
+	</body>
+
+</html>

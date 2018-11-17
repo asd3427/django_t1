@@ -1,0 +1,227 @@
+@charset "utf-8";
+/*页面布局bootstrap改写*/
+.col-xs-12{
+	margin: 0;
+	padding: 0;
+}
+/*左侧菜单*/
+.sidebar-menu{
+	
+}
+.sidebar-menu .sidebar-menu-title{
+    display: block;
+    height: 40px;
+    padding-left: 15px;
+}
+.sidebar-menu .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #3a3a3a;
+}
+.sidebar-menu a{
+	color:#3a3a3a
+}
+.sidebar-menu a:focus, a:hover{
+	color:#3a3a3a;
+}
+
+/*右侧条件筛选框*/
+/*改写bootstrap表格border*/
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border-bottom: 1px solid #ddd;
+}
+.condition-filt-box tr h4{
+	height: 40px;
+	line-height: 40px;
+	font-weight: 600;
+    margin-left: 10px;
+}
+.condition-filt-box td:first-of-type{
+	width: 12%;
+}
+/*右侧条件筛选框 -- 品牌show*/
+.condition-filt-box>tbody>tr>td, .condition-filt-box>tbody>tr>th{
+	vertical-align: middle;
+}
+.condition-filt-box  .type-info>ul {
+    padding-top: 1px;
+    margin-bottom: 5px;
+}
+.condition-filt-box  .type-info>ul>li {
+    width: 104px;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+    overflow: hidden;
+    margin: -1px 5px 0 0;
+    float: left;
+}
+.condition-filt-box .type-info>ul>li>a {
+    padding: 0;
+    line-height: 52px;
+    height: 50px;
+    width: 102px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    float: left;
+}
+.condition-filt-box .type-info>ul>li>a:hover {
+   cursor: pointer;
+   border: 1px #c4c4c4 solid;
+   box-sizing: border-box;
+}
+.condition-filt-box .type-info>ul>li>a>img {
+    display: inline;
+    width: 80px;
+    height: 40px;
+   margin: 6px 10px;
+}
+.condition-filt-box ul.priceRange>li>a{
+	color:#3a3a3a;
+}
+.condition-filt-box ul.priceRange>li>a:hover{
+	text-decoration: none;
+}
+.condition-filt-box ul.priceRange .input-group{
+	width: 200px;
+}
+.condition-filt-box ul.priceRange .input-group input{
+	float: none;
+	width: 80px;
+}
+.condition-filt-box .moreOption>li.dropdown{
+	overflow: inherit;
+	
+}
+.condition-filt-box .moreOption>li.dropdown{
+    padding: 0;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    float: left;
+}
+.condition-filt-box .moreOption>li.dropdown a{
+	color:#3a3a3a;
+    padding: 0;
+    line-height: 30px;
+    height: 30px;
+    width: 160px;
+    border: 1px solid transparent;
+    float: left;
+}
+.condition-filt-box .moreOption .dropdown-menu {
+	width: 102px;
+}
+.condition-filt-box .moreOption .dropdown-menu li{
+	width: 102px;
+}
+.condition-filt-box .moreOption .dropdown-menu label{
+	font-size: 14px;
+	font-weight: 400;
+}
+/*排序规则*/
+.navbar-default.order-rule{
+	background: rgb(245,247,246);
+    border: none;
+}
+/*排序规则字体颜色*/
+.order-rule .navbar-brand,
+.order-rule .navbar-nav li>a{
+	color: #686868;
+}
+..order-rule .navbar-nav li>a{
+	font-size: 14px;
+}
+.order-rule .navbar-brand:hover,
+.order-rule .navbar-nav li>a:hover{
+	color: #686868;
+}
+.order-rule .navbar-brand:focus,
+.order-rule .navbar-nav>li>a:focus{
+	color: #000;
+}
+.order-rule .navbar-brand.active,
+.order-rule .navbar-nav li>a.active{
+	color: #000;
+	font-weight: 600;
+}
+.navbar-nav  a>.glyphicon{
+    top: 6px;
+    margin-left: 5px;
+}
+.navbar-nav  a>.glyphicon:hover{
+    color: #b2b2b2;
+}
+.navbar-nav  a>.glyphicon.glyphicon-triangle-top{	
+ 	display: inline-block;
+    position: absolute;
+    top: 12px;
+}
+.order-rule .navbar-right li{
+	height: 50px;
+	line-height: 50px;
+	margin: 0 10px;
+}
+.pagelist-group .form-control{
+	display: inline;
+    width: 80px;
+}
+.pagelist-group li>span{
+    color: #5c5c5c;
+   
+}
+
+/*商品列表*/
+.product-item-list .product-item{
+    height: 420px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px #fff solid;
+    background: #fff;
+}
+.product-item .product-desc{
+	padding: 20px 0;
+}
+.product-item .product-desc strong{
+    font-size: 13px;
+}
+.product-item .product-desc span.curr-price{
+	color: #000;
+}
+.product-item .product-desc span.old-price{
+	text-decoration: line-through;
+	color: #5c5c5c;
+}
+.product-item .product-desc span:before{
+   content: '¥';
+}
+/*翻页*/
+.page-footer{
+	
+}
+.page-footer .pagination{
+	float: right;
+}
+/*重新改写bootsatrp.pagination*/
+.pagination>li>a, 
+.pagination>li>span{
+	color: #5c5c5c;
+}
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover{
+	 color: #fff;
+	 background-color:#000000;
+	 border-color:#000000;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover{
+	background-color:#000000;
+	border-color:#000000;
+}

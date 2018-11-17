@@ -1,0 +1,443 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/css/common.css"/>
+
+    <link rel="stylesheet" href="/static/css/detail.css"/>
+    <title>商品详情</title>
+
+</head>
+
+<body class="paged">
+
+<div class="header container-fluid">
+    <div class="site-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-user-info">Hi
+                    <a href="/login.html" target="_parent">[ 请登录 ]</a>
+                    <a href="/register.html" target="_parent">[ 免费注册 ]</a>
+                </div>
+                <div class="col-md-6 right-menu-list">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 我的订单</li>
+                        <li><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> 我的收藏</li>
+                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 消息</li>
+                        <li><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 客户服务</li>
+                        <li>关注微信</li>
+                        <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机版</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <img class="col-md-3 header-middile-logo" src="/static/img/logo.png"/>
+        <!--搜索组件-->
+        <div class="col-md-3 search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="viishow 5折封顶  ">
+                <span class="input-group-btn">
+						      <button type="button" class="btn btn-default btn-lg">
+								  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</button>
+						</span>
+            </div>
+            <ul>
+                <li>围巾</li>
+                <li>毛衣</li>
+                <li>帽子</li>
+                <li>Dickies</li>
+                <li>手机壳</li>
+                <li>运动鞋</li>
+            </ul>
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"
+                  style="text-align: left; font-size: 30px;position: absolute;right: -30px;"></span>
+        </div>
+        <!--<div class="col-md-1 search-box" style="text-align: left; font-size: 30px;">
+
+        </div>-->
+        <!-- /搜索组件 -->
+    </div>
+</div>
+<!--导航条-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="/">首页</a>
+                </li>
+                <li class="">
+                    <a href="#">男士</a>
+                </li>
+                <li class="">
+                    <a href="#">女士</a>
+                </li>
+                <li class="">
+                    <a href="#">鞋履</a>
+                </li>
+                <li class="">
+                    <a href="#">配饰</a>
+                </li>
+                <li class="">
+                    <a href="#">设计款新品</a>
+                </li>
+                <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+<main class="main" role="main" id="app">
+
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">首页</a>
+            </li>
+            <li>
+                <a href="#">{[{ obj.gender.display }]}</a>
+            </li>
+            <li>
+                <a href="#">{[{ obj.type.display }]}</a>
+            </li>
+            <li class="active">{[{ obj.category.title }]}</li>
+        </ol>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 product-show-img">
+                <div class="mainImg" id="largePicDiv">
+                    <div id="detailPic" class="big_pic"
+                         :style="'background-image: url( '+ obj.pic_list[0].img +');'"></div>
+                    <div class="zoom_pup" id="move"></div>
+                </div>
+                <div class="allImg">
+                    <img v-for="pic in obj.pic_list" :src="pic.img" :class="{'active' : pic.is_main === true}"/>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 product-show-msg">
+                <!--信息列表 begin-->
+                <table class="table product-msg-box">
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <h4 class="product-name">{[{ obj.title }]}</h4></td>
+                    </tr>
+                    <tr>
+                        <td class="price-tr">
+                            <span>吊牌价：<span class="old-price">{[{ obj.pric }]}</span></span>
+                            <span>促销价：<span class="new-price">{[{ obj.sales_pric }]}</span></span>
+                            <span class="discount">{[{ obj.discount }]}</span>
+                            <span>登陆后即可查看vip价格</span>
+                            <span><a class="tx_red" href="/login.html">立即登录</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="color-tr">
+                            <span class="size">尺码：<a v-for="size in obj.size">{[{ size }]}</a></span>
+                            <span class="color">颜色：
+                                <a v-for="style in obj.style_list" :style_id="style.id" class="style"
+                                   :style="'background: url('+style.img +')  no-repeat center;background-size: contain;'"></a>
+                            </span>
+                            <span>数量：<input class="input-area" type="number" min="1" name="number"
+                                            v-model="cart.count"/>&nbsp;件 </span>
+                        </td>
+                    </tr>
+                    <tr class="button-area">
+                        <td>
+                            <button type="button" class="btn btn-default btn-lg bg_red">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"
+                                      @click="addCart(cart)">&nbsp;加入购物车</span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-lg collect">
+                                <span class="glyphicon glyphicon-heart" aria-hidden="true">&nbsp;收藏商品</span>
+                            </button>
+                            <div class="ewm-box">
+                                <img src="/static/img/detail/ewm.png"/>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--条件筛选 end-->
+            </div>
+        </div>
+    </div>
+    <div class="container product-all-msg" v-html="obj.content">
+        <!--商品信息-->
+    </div>
+    <!--售后服务-->
+    <div class="container after-sale-service">
+        <h5 class="container-title">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 售后服务
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+        </h5>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3"></div>
+            <div class="col-xs-12 col-sm-2 first"><img src="/static/img/detail/aftersale01.png"/></div>
+            <div class="col-xs-12 col-sm-2"><img src="/static/img/detail/aftersale02.png"/></div>
+            <div class="col-xs-12 col-sm-2"><img src="/static/img/detail/aftersale03.png"/></div>
+            <div class="col-xs-12 col-sm-3"></div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row main-footer-title">
+            <div class="col-sm-2" style="padding-left: 5px;"><img src="/static/img/bottomlogo/bottom_1.png"></div>
+            <div class="col-sm-2"><img src="/static/img/bottomlogo/bottom_2.png"></div>
+            <div class="col-sm-2"><img src="/static/img/bottomlogo/bottom_3.png"></div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 order-email" style="padding: 0;padding-right: 5px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="订阅我们的邮件" readonly
+                           aria-describedby="order-email">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row table-responsive">
+            <table class="table table-bordered table-striped responsive-utilities footer-menu">
+                <thead>
+                <tr>
+                    <th>新手专区</th>
+                    <th>会员中心</th>
+                    <th>购物指南</th>
+                    <th>支付方式</th>
+                    <th>配送方式</th>
+                    <th>售后服务</th>
+                    <th>APP常见问题</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>登录注册</td>
+                    <td>会员制度</td>
+                    <td>发票</td>
+                    <td>在线支付</td>
+                    <td>配送说明</td>
+                    <td>退换货政策</td>
+                    <td>IPhone版</td>
+                </tr>
+                <tr>
+                    <td>购物结算</td>
+                    <td>会员优惠</td>
+                    <td>尺码对照</td>
+                    <td>货到付款</td>
+                    <td>运费说明</td>
+                    <td>退换货流程</td>
+                    <td>Android版</td>
+                </tr>
+                <tr>
+                    <td>下单支付</td>
+                    <td>账户管理</td>
+                    <td>尺码解读</td>
+                    <td>分期支付</td>
+                    <td>验货签收</td>
+                    <td>投诉与建议</td>
+                    <td>WAP版</td>
+                </tr>
+                <tr>
+                    <td>收货评价</td>
+                    <td>密码管理</td>
+                    <td>商品咨询</td>
+                    <td>优惠券、有货币</td>
+                    <td>收获样品</td>
+                    <td>在线客服</td>
+                    <td>IPAD版</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row bottom-horizon-list">
+            <div class="col-sm-3">
+                <img src="/static/img/bottomlogo/1.png"/>
+                <img src="/static/img/bottomlogo/2.png"/>
+                <img src="/static/img/bottomlogo/3.png"/>
+            </div>
+            <div class="col-sm-9">
+                <a>返回首页</a>|
+                <a>动脑科技</a>|
+                <a>联系我们</a>|
+                <a>商家入驻</a>|
+                <a>隐私条款</a>|
+                <a>友情链接</a>|
+                <a>潮流品牌大全</a>|
+                <a>潮流资讯</a>|
+                <a>穿衣搭配（男生版）</a>|
+                <a>穿衣搭配（女生版）</a>|
+                <a>潮流人气</a>|
+                <a>潮流新品</a>|
+                <a>潮流视频</a>|
+            </div>
+            <p>Copyright 2013-2017 <a href="http://www.dongnaoedu.com" rel="nofollow" target="_blank" title="动脑科技">dongnaoshop.com</a>
+                All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/vue.js"></script>
+
+<script type="text/javascript" src="/static/js/axios.min.js"></script>
+
+
+<script>
+    vue = new Vue({
+        delimiters: ["{[{", "}]}"],
+        el: '#app',
+        data: {
+            obj: {
+                "id": 1,
+                "category": {"id": 1, "title": ""},
+                "gender": {"id": 0, "title": ""},
+                "type": {"id": 0, "title": ""},
+                "title": "NullName",
+                "price": "0",
+                "sales_price": "0",
+                "sales_count": 0,
+                "num": 0,
+                "discount": 0,
+                "content": "",
+                "brand": 1,
+                "size": 1,
+                "pic_list": [
+                    {
+                        "img": ""
+                    }
+                ],
+                "style_list": [
+                    {
+                        id: 0,
+                        title: "NulTitle",
+                        sales_count: 0,
+                        num: 0,
+                        img: {% static "/media/item_02.jpg"%},
+                        product: 0
+                    }
+                ]
+            },
+            cart: {
+                count: 1,
+                style: 0,
+                product: 0,
+            }
+        },
+        methods: {
+            addCart: function (a) {
+                // 移除购物车内容
+                if (this.cart.style) {
+                    var url = '/trade/cart/';
+                    axios.post(url, this.cart).then(function (response) {
+                        alert("添加购物车成功");
+                    }).catch(function (error) {
+                        console.log(error)
+                    })
+                    console.log("添加cart_id=" + this.cart.product + "成功！")
+                }
+            },
+            getCookie: function (name) {
+                var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+                if (arr = document.cookie.match(reg)) {
+                    return (arr[2]);
+                } else {
+                    return false
+                }
+            }
+        },
+        mounted: function () {
+            // 初始化时设置请求头
+            axios.defaults.headers.common['X-CSRFToken'] = this.getCookie("csrftoken");
+            // 发送异步请求加载数据
+            var id = GetQueryString("id");
+            if (!id) {
+                return false;
+            }
+            axios.get('/store/product/' + id + '/')
+                .then(function (response) {
+
+                    vue.obj = response.data;
+                    vue.cart.product = vue.obj.id;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
+    })
+
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    $(function () {
+        $('#remarkTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show')
+        })
+
+        $('.allImg img').click(function (e) {
+            e.preventDefault();
+            $('.allImg img').each(function () {
+                $(this).removeClass('active')
+            })
+            $(this).addClass('active');
+            $('#detailPic').css('background-image', "url(" + $(this).attr('src') + ")");
+        })
+
+        $('.color-tr a').click(function (e) {
+            e.preventDefault();
+            $('.color-tr a').each(function () {
+                $(this).removeClass('active');
+                $(this).find("i").remove();
+            })
+            $(this).addClass('active');
+            $(this).append('<i class="checked"></i>')
+            $(this).children().css({
+                'background': 'url("/static/img/detail/check.png")',
+                'position': 'absolute',
+                'right': '0',
+                'bottom': '0',
+                'height': '12px',
+                'width': '12px'
+            });
+            vue.cart.style = $(this).attr('style_id');
+        })
+    })
+</script>
+
+
+</body>
+</html>

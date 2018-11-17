@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*优选品牌部分*/
+.referred-brand{
+	margin-top: 40px;
+}
+.referred-brand .referred-brand-title{
+	font-size: 25px;
+    margin-bottom: 10px;
+}
+.referred-brand .referred-brand-title div{
+	margin: 0;
+    padding: 0;
+    padding-left:5px ;
+}
+#preferred-brand-list .preferred-brand-item{
+    height: 185px;
+    background: #fff;
+    padding: 5px;
+}
+#preferred-brand-list .preferred-brand-item img{
+	width: 100%;
+}
+#preferred-brand-list .preferred-brand-item img:hover{
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.52);
+	margin-top: -5px;
+	transition-duration: 0.4s;
+	transform-style: flat;
+}
+
+#preferred-brand-list .preferred-brand-item a{
+	cursor: pointer;
+}
+/*优选小列表*/
+.preferred-brand-list-small{
+	border: none;
+	overflow: hidden;
+}
+.preferred-brand-list-small td,.preferred-brand-list-small th{
+	background: #fff;
+	border: none;
+	height: 120px;
+	background-size: contain;
+}
+.preferred-brand-list-small td{
+	
+}
+/*潮流精品列表*/
+.referred-brand .fashion-brand-title{
+	font-size: 25px;
+	margin-top: 20px;
+}
+.referred-brand .fashion-brand-title div{
+	margin: 0;
+    padding: 0;
+    padding-left:5px ;
+}
+.fashion-brand-list-small{
+	border: 5px solid #fff;
+	margin-top: -10px;
+}
+.fashion-brand-list-small td{
+	background: #fff;
+	border: none;
+	height:260px;
+}
+.fashion-brand-list-small th{
+	height:0;
+}
+.fashion-brand-item{
+    height: 260px;
+    padding: 5px;
+    border: 3px solid #fff;
+}

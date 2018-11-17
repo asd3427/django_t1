@@ -1,0 +1,81 @@
+.sidebar-menu{
+   padding: 0;
+}
+a:focus, a:hover{
+	color:  #454545;
+	text-decoration: none;
+}
+/*左右顶部标题*/
+.row>.col-xs-12>h4{
+    font-weight: 600;
+    background: rgb(227,227,227);
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgb(217, 217, 217);
+    margin: 0;
+    padding: 0 10px;
+}
+/*左右顶部标题*/
+.row>.col-xs-12>h4>small{
+	font-weight: 600;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.row>.col-xs-12>h4>span{
+	font-weight: 600;
+	font-size: 13px;
+	margin-left: 10px;
+}
+/*左侧头像*/
+.sidebar-menu h4+img{
+	 border: 1px solid rgb(217, 217, 217);
+	 border-top: none;
+}
+/*菜单图标*/
+.sidebar-menu .glyphicon{
+    margin-right: 10px;
+    font-size: 18px;
+}
+/*一级菜单*/
+.menu-first{
+    display: block;
+    height:45px;
+    line-height:45px;
+    background-color: #e9e9e9;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: #333;
+    padding: 0 10px;
+}
+/*一级菜单鼠标划过状态*/
+.menu-first:hover{
+    text-decoration: none;
+    background-color: #d6d4d5;
+    color: #454545;
+}
+/*二级菜单*/
+.menu-second li a{
+	color:  #454545;
+    background-color: #f6f6f6;
+    height:45px;
+    line-height:45px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 35px;
+}
+/*二级菜单鼠标划过样式*/
+.menu-second li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(99,99,99);
+    border-top: 1px solid rgb(99,99,99);
+    border-bottom: 1px solid rgb(99,99,99);
+    border-right: 3px solid rgb(99,99,99);
+    border-left: 3px solid rgb(99,99,99);
+}

@@ -1,0 +1,387 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap-theme.min.css" %} " />
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.min.css" %} " />
+		<link rel="stylesheet" href="{% static "css/common.css" %} " />
+		<link rel="stylesheet" href="{% static "css/detail.css" %} " />
+		<title>商品详情</title>
+	</head>
+
+	<body class="paged">
+		{% include "head.html" %}
+		<main class="main" role="main">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">男士</a>
+					</li>
+					<li>
+						<a href="#">上装</a>
+					</li>
+					<li class="active">卫衣</li>
+				</ol>
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 product-show-img">
+						<div class="mainImg" id="largePicDiv">
+							<div id="detailPic" class="big_pic" style="background-image: url('{% static "img/detail/item_01.jpg" %}');"></div>
+							<div class="zoom_pup" id="move"></div>
+						</div>
+						<div class="allImg">
+							<img class="active" src="{% static "img/detail/item_01.jpg" %}" />
+							<img class="" src="{% static "img/detail/item_02.jpg" %}" />
+							<img class="" src="{% static "img/detail/item_03.jpg" %}" />
+							<img class="" src="{% static "img/detail/item_04.png" %}" />
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 product-show-msg">
+						<!--信息列表 begin-->
+						<table class="table product-msg-box">
+							<tbody>
+								<tr>
+									<td colspan="2">
+										<h4 class="product-name">{{request.GET.title|default:"未命名"}}</h4></td>
+								</tr>
+								<tr>
+									<td class="price-tr">
+										<span>吊牌价：<span class="old-price">399.00</span></span>
+										<span>促销价：<span class="new-price">279.00</span></span>
+										<span class="discount">7.0折</span>
+										<span>登陆后即可查看vip价格</span>
+										<span><a class="tx_red" href="login.html">立即登录</a></span>
+									</td>
+								</tr>
+								<tr>
+									<td class="color-tr">
+										<span class="size">尺码：<a>S</a><a>M</a><a>L</a><a>XL</a></span>
+										<span class="color">颜色：<a class="black"></a><a class="yellow"></a></span>
+										<span>数量：<input class="input-area" type="number" min="1" name="number" value="1"/>&nbsp;件 </span>
+									</td>
+								</tr>
+								<tr class="button-area">
+									<td>
+										<button type="button" class="btn btn-default btn-lg bg_red">
+										  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">&nbsp;加入购物车</span>
+										</button>
+										<button type="button" class="btn btn-default btn-lg collect">
+										  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>&nbsp;收藏商品</span>
+										</button>
+										<div class="ewm-box">
+											<img src="{% static "img/detail/ewm.png" %}" />
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--条件筛选 end-->
+					</div>
+				</div>
+			</div>
+			<div class="container product-all-msg">
+				<!--商品信息-->
+				<div class="row">
+					<h4 class="product-all-msg-title">商品信息</h4>
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>编号</td>
+									<td class="type-info">51659554</td>
+									<td>颜色</td>
+									<td class="type-info">黑</td>
+									<td>性别</td>
+									<td class="type-info">男款</td>
+									<td>衣长</td>
+									<td class="type-info">适中</td>
+								</tr>
+								<tr>
+									<td>袖长</td>
+									<td class="type-info">长袖</td>
+									<td>版型</td>
+									<td class="type-info">正常</td>
+									<td>厚度</td>
+									<td class="type-info">中</td>
+									<td>经典款型</td>
+									<td class="type-info">连帽套头卫衣</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--材质洗涤-->
+				<div class="row">
+					<h4 class="product-all-msg-title">材质洗涤</h4>
+					<div class="col-xs-12 col-sm-4 right-split">
+						<img src="{% static "img/detail/cotton.png" %}" />
+					</div>
+					<p class="col-xs-12 col-sm-8">
+						用各种洗涤剂，可用手洗机洗，但不宜氯漂，宜阴干，避免暴晒，以免深色衣物褪色，在日光下晾晒时，将里面朝外，浸泡时间不能太长，避免褪色， 深色于浅色衣服最好请分开洗涤，避免染色，棉质商品一般易皱、易缩水、易变性，购买时请注意。
+					</p>
+					<strong class="tx_red">
+							<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+							温馨提示：因产品工艺不同，洗涤方式请以吊牌信息为准</strong>
+				</div>
+				<!--尺码信息-->
+				<div class="row">
+					<h4 class="product-all-msg-title">尺码信息</h4>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<th>吊牌尺码</th>
+								<th>参考尺码</th>
+								<th>肩宽</th>
+								<th>胸围</th>
+								<th>袖长</th>
+								<th>前衣长</th>
+								<th>后衣长</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>S</td>
+									<td>165/80A</td>
+									<td>58</td>
+									<td>100</td>
+									<td>55</td>
+									<td>65</td>
+									<td>65</td>
+								</tr>
+								<tr class="active">
+									<td>M</td>
+									<td>170/84A</td>
+									<td>60</td>
+									<td>104</td>
+									<td>55</td>
+									<td>68</td>
+									<td>68</td>
+								</tr>
+								<tr>
+									<td>L</td>
+									<td>175/88A</td>
+									<td>62</td>
+									<td>110</td>
+									<td>56</td>
+									<td>68</td>
+									<td>68</td>
+								</tr>
+								<tr class="active">
+									<td>XL</td>
+									<td>180/92A</td>
+									<td>65</td>
+									<td>116</td>
+									<td>60</td>
+									<td>73</td>
+									<td>73</td>
+								</tr>
+							</tbody>
+						</table>
+						<span>※ 以上尺寸为实物人工测量，因测量方式不同会有1-2CM误差，相关数据仅做参考，以收到实物为准。单位：CM
+							<br/>※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考</span>
+						<img class="in-table-img" src="{% static "img/detail/tops.png" %}" />
+					</div>
+				</div>
+				<!--商品详情-->
+				<div class="row prduct-imgs">
+					<h4 class="product-all-msg-title">商品详情</h4>
+					<span class="prduct-desc">这款卫衣，整体简约纯色设计，连帽的街头风格，特色在于下摆的系带设计，飘带的添加，面料保暖舒适，由整齐车线缝制而成的底边，走线均匀细密，彰显良好工艺品质。</span>
+					<img class="imgs-box" src="{% static "img/detail/3_03.jpg" %}" />
+					<img class="imgs-box" src="{% static "img/detail/3_06.jpg" %}" />
+				</div>
+				<!--商品评价-->
+				<div class="row">
+					<h4 class="product-all-msg-title">商品评价</h4>
+					<div class="remark-tabs" data-example-id="togglable-tabs">
+						<ul id="remarkTabs" class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#all" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">全部（1）</a>
+							</li>
+							<li role="presentation" class="">
+								<a href="#img" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">有图（1）</a>
+							</li>
+						</ul>
+						<div id="remarkTabContent" class="tab-content">
+							<div role="tabpanel" class="tab-pane fade active in" id="all" aria-labelledby="home-tab">
+								<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="img" aria-labelledby="profile-tab">
+								<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--售后服务-->
+			<div class="container after-sale-service">
+				<h5 class="container-title">
+						<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 售后服务
+						 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+					</h5>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3"></div>
+					<div class="col-xs-12 col-sm-2 first"><img src="{% static "img/detail/aftersale01.png" %}" /></div>
+					<div class="col-xs-12 col-sm-2"><img src="{% static "img/detail/aftersale02.png" %}" /></div>
+					<div class="col-xs-12 col-sm-2"><img src="{% static "img/detail/aftersale03.png" %}" /></div>
+					<div class="col-xs-12 col-sm-3"></div>
+				</div>
+			</div>
+			<!--相关推荐-->
+			<div class="container refer-recommend">
+				<h5 class="container-title">相关推荐</h5>
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>马甲卫衣</td>
+								<td>卫衣裙女长款</td>
+								<td>男童秋款卫衣</td>
+								<td>卫衣棉衣外套女童</td>
+								<td>卫衣女均码</td>
+								<td>时尚冬季卫衣</td>
+							</tr>
+							<tr>
+								<td>卫衣裙韩</td>
+								<td>男童打底卫衣</td>
+								<td>连帽可爱卫衣</td>
+								<td>抓绒长款卫衣裙</td>
+								<td>烫金黑色卫衣</td>
+								<td>女士卫衣夏季套装</td>
+							</tr>
+							<tr>
+								<td>大嘴猴抓绒卫衣</td>
+								<td>宝宝保暖卫衣</td>
+								<td>韩卫衣女蝙蝠</td>
+								<td>图案加厚卫衣</td>
+								<td>冬款加厚卫衣</td>
+								<td>女童熊猫卫衣套装</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--新品推荐-->
+			<div class="container new-recommend">
+				<h5 class="container-title">新品推荐</h5>
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>LifeAfterLife/LAL纯色高领卫衣</td>
+								<td>假两件连帽卫衣</td>
+								<td>刺绣字母撞色圆领卫衣</td>
+								<td>字母国旗贴布圆领卫衣</td>
+								<td>趣味图案贴布圆领卫衣</td>
+							</tr>
+							<tr>
+								<td>净版纯色卫衣 </td>
+								<td>拉链拼接黑色圆领卫衣男士外套</td>
+								<td>徐毛毛 box logo 连帽卫衣</td>
+								<td>徐毛毛 创意刺绣图案圆领休闲卫衣</td>
+								<td>简约纯色开衫卫衣 </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!--文章推荐-->
+			<div class="container essay-recommend">
+				<h5 class="container-title">文章推荐</h5>
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>一个Logo就足以帅炸你,你不知道的Logo T的魅力-识物</td>
+								<td>最近流行的8大潮品,直男看了会流泪</td>
+								<td>既要保暖又要前卫 2017秋冬季潮品推荐</td>
+								<td>好物| 6件疯狂但却值得你购买的潮品</td>
+								<td>千万别穿这些潮流运动品去跑步</td>
+							</tr>
+							<tr>
+								<td>感谢这几招,让我潮品弄脏了不用再叫妈</td>
+								<td>创意生活丨24个创意潮品让生活变简单</td>
+								<td>好物| 6件疯狂但却值得你购买的潮品</td>
+								<td>有关时尚 那些潮流文章不会告诉你的事儿</td>
+								<td>时尚|“袖”潮盛行,看看在袖子上做过的文章</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--店铺推荐-->
+			<div class="container store-recommend">
+				<div class="store-tabs" data-example-id="togglable-tabs">
+					<ul id="storeTabs" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#store" id="store-tab" role="tab" data-toggle="tab" aria-controls="store" aria-expanded="true">店铺推荐</a>
+						</li>
+						<li role="presentation" class="">
+							<a href="#recent-visit" role="tab" id="recent-visit-tab" data-toggle="tab" aria-controls="recent-visit" aria-expanded="false">最近浏览</a>
+						</li>
+						<a class="fl_right refresh">换一批&nbsp;<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></a>
+					</ul>
+					<div id="storeTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="store" aria-labelledby="store-tab">
+							<ul>
+                                {% for item in storerecommend %}
+								<li>
+									<img src="{% static "img/detail/storerecommend1.png" %}" />
+									<span class="item-name">Life After Life 假两件连帽卫衣 </span>
+									<span class="item-price">479.00</span>
+								</li>
+                                {% endfor %}
+							</ul>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="recent-visit" aria-labelledby="recent-visit-tab">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+
+		{% include "footer.html" %}
+		<script type="text/javascript" src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
+		<script>
+			$(function() {
+				$('#remarkTabs a').click(function(e) {
+					e.preventDefault();
+					$(this).tab('show')
+				})
+
+				$('.allImg img').click(function(e) {
+					e.preventDefault();
+					$('.allImg img').each(function() {
+						$(this).removeClass('active')
+					})
+					$(this).addClass('active');
+					$('#detailPic').css('background-image', "url(" + $(this).attr('src') + ")");
+				})
+
+				$('.color-tr a').click(function(e) {
+					e.preventDefault();
+					$('.color-tr a').each(function() {
+						$(this).removeClass('active');
+						$(this).find("i").remove();
+					})
+					$(this).addClass('active');
+					$(this).append('<i class="checked"></i>')
+					$(this).children().css({
+						'background': 'url("img/detail/check.png")',
+						'position': 'absolute',
+						'right': '0',
+						'bottom': '0',
+						'height': '12px',
+						'width': '12px'
+					});
+				})
+			})
+		</script>
+	</body>
+
+</html>

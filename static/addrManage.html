@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sidebarMenu.css" />
+		<link rel="stylesheet" href="css/addrManage.css" />
+		<title>地址管理</title>
+	</head>
+	<body class="paged">
+		<iframe marginwidth="0" marginheight="0" style="margin: 0; padding: 0;" frameborder="0" scrolling="no" src="common/head.html" height="227px" width="100%" style="position: absolute;min-height: 227px;"></iframe>
+		<main class="main" role="main">
+			<div class="container addr-manage">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">个人中心</a>
+					</li>
+					<li class="active">订单中心</li>
+				</ol>
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 sidebar-menu">
+						<h4>个人中心<small>UCENTER</small></h4>
+						<img src="img/UCENTER/U.png" width="100%">
+						<a href="#orderMeun" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>交易管理
+						</a>
+						<ul id="orderMeun" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">我的订单</a>
+							</li>
+							<li>
+								<a href="#">我的收藏</a>
+							</li>
+							<li>
+								<a href="#">我的动脑币</a>
+							</li>
+							<li>
+								<a href="#">我的红包</a>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+							</li>
+							<li>
+								<a href="#">我的邀请好友</a>
+							</li>
+							<li>
+								<a href="#">我的礼品卡</a>
+							</li>
+							<li>
+								<a href="#">我的VIP</a>
+							</li>
+						</ul>
+						<a href="#serviceCenter" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>服务中心
+						</a>
+						<ul id="serviceCenter" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">我的退/换货</a>
+							</li>
+							<li>
+								<a href="#">我的发票</a>
+							</li>
+							<li>
+								<a href="#">我的咨询</a>
+							</li>
+							<li>
+								<a href="#">我的评论</a>
+							</li>
+							<li>
+								<a href="#">我的消息</a>
+							</li>
+							<li>
+								<a href="#">在线客服</a>
+							</li>
+						</ul>
+						<a href="#messMenu" class="nav-header menu-first collapsed" data-toggle="collapse">
+							<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>个人信息管理
+						</a>
+						<ul id="messMenu" class="nav nav-list collapse menu-second">
+							<li>
+								<a href="#">编辑个人资料</a>
+							</li>
+							<li>
+								<a href="#">账号安全</a>
+							</li>
+							<li>
+								<a href="#">地址管理</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-10 content-right">
+						<h4>地址管理</h4>
+						<div class="addr-box">
+							<div class="reminder">
+								为提高配送时效，请您尽快准确填写四级地址
+							</div>
+							<div class="addr-box-title">
+								<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>添加新地址
+							</div>
+							<div class="addr-box-content">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label for="consignee">收货人姓名</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" id="consignee">
+										</div>
+										<span><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>请输入收货人姓名</span>
+									</div>
+									<div class="form-group">
+										<label for="address">省份</label>
+										<div class="col-sm-8">
+											<select class="form-control">
+												<option>请选择省份</option>
+											</select>
+											<select class="form-control">
+												<option>请选择市</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="address">地址</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="address" placeholder="">
+										</div>
+										<span><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>请填写详细地址</span>
+									</div>
+									<div class="form-group">
+										<label for="zipCode">邮编</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" id="zipCode" placeholder="">
+										</div>
+										<span><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>请输入收货人所在地邮编号码</span>
+									</div>
+									<div class="form-group">
+										<label for="fixedTel">固定电话</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" id="fixedTel" placeholder="">
+										</div>
+										<span><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>请输入你的联系电话，可以为空哦</span>
+									</div>
+									<div class="form-group">
+										<label for="mobilePhone">手机号码</label>
+										<div class="col-sm-3">
+											<input type="text" class="form-control" id="mobilePhone" placeholder="">
+										</div>
+										<span><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>填写手机号便于接收发货和收获通知</span>
+									</div>
+									<button type="submit" class="btn btn-default submit-addr">
+									  	提交信息
+									  	<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+									  </button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<iframe marginwidth="0" marginheight="0" style="margin: 0; padding: 0;" frameborder="0" scrolling="no" src="common/footer.html" height="400px" width="100%" style="position: absolute;min-height: 400px;"></iframe>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script>
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+.main{
+	margin-bottom: 80px;
+}
+/*右边样式*/
+.content-right .order-box{
+	border: 1px solid rgb(217, 217, 217);
+	min-height: 620px;
+}
+/*温馨提示*/
+.content-right .order-box .reminder{
+    background: rgb(250,246,217);
+    margin: 10px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.order-tabs{
+	padding: 0 10px;
+}
+.order-tabs .nav-tabs>li>a{
+	color: #222222;
+}
+.tab-content{
+	position: relative;
+}
+.tab-content .content-title,
+.tab-content .content-table{
+	margin: 10px;
+}
+.tab-content .content-title .col-xs-12{
+	height: 40px;
+	line-height: 40px;
+	background: rgb(239,239,239);
+}
+.tab-content .row.content-table {
+	height: 460px;
+}
+.tab-content .row.tabpanel-foot {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(239,239,239);
+    margin: 0;
+    width: 100%;
+    padding: 0 10px;
+    text-align: right;
+    border: 1px solid rgb(217, 217, 217);
+}

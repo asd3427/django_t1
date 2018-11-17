@@ -1,0 +1,328 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap-theme.min.css" %} " />
+		<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.min.css" %} " />
+		<link rel="stylesheet" href="{% static "css/common.css" %} " />
+		<link rel="stylesheet" href="{% static "css/list.css" %} " />
+		<title>商品列表</title>
+	</head>
+
+	<body class="paged">
+		{% include "head.html" %}
+		<main class="main" role="main">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li class="active">男士</li>
+				</ol>
+				<div class="row table-responsive">
+					<div class="col-xs-12 col-sm-2 sidebar-menu">
+						<span class="sidebar-menu-title">全部分类</span>
+						<ul class="nav nav-pills nav-stacked">
+							<li role="presentation" class="active">
+								<a href="#">上装</a>
+							</li>
+							<li role="presentation">
+								<a href="#">下装</a>
+							</li>
+							<li role="presentation">
+								<a href="#">鞋履</a>
+							</li>
+							<li role="presentation">
+								<a href="#">配饰</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-10">
+						<!--条件筛选 begin-->
+						<table class="table condition-filt-box">
+							<tbody>
+								<tr>
+									<td>
+										<h4>品牌</h4></td>
+									<td class="type-info">
+										<ul class="showLogo">
+											<li>
+												<a><img src="{% static "img/conditionfilter/peacebird.jpg" %}" /></a>
+											</li>
+											<li>
+												<a><img src="{% static "img/conditionfilter/efili.png" %}" /></a>
+											</li>
+											<li>
+												<a><img src="{% static "img/conditionfilter/only.jpg" %}" /></a>
+											</li>
+											<li>
+												<a><img src="{% static "img/conditionfilter/ca.jpg" %}" /></a>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>价格</h4></td>
+									<td class="type-info">
+										<ul class="priceRange">
+											<li>
+												<a>¥0-149</a>
+											</li>
+											<li>
+												<a>¥150-189</a>
+											</li>
+											<li>
+												<a>¥190-299</a>
+											</li>
+											<li>
+												<a>¥299以上</a>
+											</li>
+											<li class="input-group">
+												¥
+												<input type="text" class="form-control"> -
+												<input type="text" class="form-control">
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>颜色</h4></td>
+									<td class="type-info">
+
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h4>高级选项</h4></td>
+									<td class="type-info">
+										<ul class="nav nav-pills moreOption">
+											<li role="presentation" class="dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu">
+													<li><label for="jd"><input id="jd" type="checkbox">经典款型</label></li>
+													<li><label for="new"><input id="new" type="checkbox">新到商品 </label></li>
+													<li><label for="zk"><input id="zk" type="checkbox">折扣商品</label></li>
+													<li><label for="dp"><input id="dp" type="checkbox">搭配减价</label></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--条件筛选 end-->
+						<!--排序规则 begin-->
+						<nav class="navbar navbar-default order-rule">
+							<div class="container-fluid">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="#">默认</a>
+								</div>
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+										<li class="">
+											<a href="#">人气<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+										</li>
+										<li>
+											<a href="#">新品<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+										</li>
+										<li>
+											<a href="#">价格<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+										</li>
+										<li>
+											<a href="#">折扣<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+										</li>
+										<li>
+											<a href="#">打折<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+										</li>
+									</ul>
+									<ul class="nav navbar-nav navbar-right pagelist-group form-group">
+										<li>
+											<select class="form-control">
+												<option>10</option>
+												<option>20</option>
+												<option>30</option>
+												<option selected>40</option>
+												<option>50</option>
+											</select>
+										</li>
+										<li><span class="glyphicon">每页</span></li>
+										<li><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+										</li>
+										<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</li>
+									</ul>
+								</div>
+								<!-- /.navbar-collapse -->
+							</div>
+							<!-- /.container-fluid -->
+						</nav>
+						<!--商品列表-->
+						<table class=" table table-bordered table-striped product-item-list">
+							<tbody>
+
+
+								<tr>
+                                    {% for item in productlist %}
+									<td class="product-item">
+										<img src="{% static "img/productlist/product1.png" %}" />
+										<p class="product-desc">
+											<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+											<span class="old-price">1050.0</span>
+											<span class="curr-price">199.0</span>
+										</p>
+									</td>
+                                    {% endfor %}
+									<td class="product-item">
+										<img src="{% static "img/productlist/product1.png" %}" />
+										<p class="product-desc">
+											<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+											<span class="old-price">1050.0</span>
+											<span class="curr-price">199.0</span>
+										</p>
+									</td>
+									<td class="product-item">
+										<img src="{% static "img/productlist/product1.png" %}" />
+										<p class="product-desc">
+											<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+											<span class="old-price">1050.0</span>
+											<span class="curr-price">199.0</span>
+										</p>
+									</td>
+									<td class="product-item">
+										<img src="{% static "img/productlist/product1.png" %}" />
+										<p class="product-desc">
+											<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+											<span class="old-price">1050.0</span>
+											<span class="curr-price">199.0</span>
+										</p>
+									</td>
+									<tr>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+										<td class="product-item">
+											<img src="{% static "img/productlist/product1.png" %}" />
+											<p class="product-desc">
+												<strong>YOHOHOOD 趣味歌词印花长款风衣</strong>
+												<span class="old-price">1050.0</span>
+												<span class="curr-price">199.0</span>
+											</p>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+						<nav class="page-footer" aria-label="...">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+								</li>
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		{% include "footer.html" %}
+		<script type="text/javascript" src="{% static "js/jquery-3.2.1.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
+		<script>
+			$(function() {
+				$('.dropdown-toggle').dropdown();
+			})
+			$('.nav-stacked li').click(function() {
+				$('.nav-stacked li').removeClass('active')
+				$(this).addClass('active');
+			});
+			$('.pagination li').click(function() {
+				if($(this).find('a').text() == '1') {
+					$('.pagination li:first-child').addClass('disabled');
+				} else {
+					$('.pagination li:first-child').removeClass('disabled');
+				}
+				$('.pagination li').removeClass('active')
+				$(this).addClass('active');
+			});
+		</script>
+
+	</body>
+
+</html>

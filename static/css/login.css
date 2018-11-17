@@ -1,0 +1,113 @@
+/*登录框*/
+.login-box{
+	margin: 75px 0;
+	background: #fff;
+	height:450px;
+	padding: 20px;
+ 	font-size: 25px;
+ 	color: #E6E6E6;
+}
+/*登录框账号登录&扫码登录标题*/
+.login-box-title>a {
+   text-decoration: none;
+    font-size: 20px;
+    color: #787878;
+    cursor: pointer;
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+   
+}
+.login-box-title>a.active{
+    color: #000;
+}
+/*重写标签页*/
+#loginTab div.tab-pane{
+	height:300px;
+    padding: 20px;
+}
+/*重写登录输入框*/
+#loginTab div.tab-pane .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 12px 12px;
+    line-height: 40px;
+    border-radius: 1px;
+    margin: 20px 0;
+}
+
+/*注册账号、忘记密码区域*/
+#loginTab div.tab-pane .regfor{
+	font-size: 14px;
+	color: #787878;
+    text-align: center;
+    margin-top: 20px;
+}
+#loginTab div.tab-pane .regfor a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #787878;
+    cursor: pointer;
+    display: inline;
+}
+#loginTab div.tab-pane .regfor a:hover{
+	text-decoration: underline;
+}
+/*其他方式登录,去掉nav-tabs自带的border*/
+.nav-tabs{
+	border: none;
+}
+.login-box-other{
+    border-top: 1px solid #ddd;
+    height: 80px;
+    position: relative;
+}
+.login-box-other-title{
+	background: #fff;
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #9e9e9e;
+}
+.other-list{
+	list-style: none;
+	height: 80px;
+	padding: 0;
+	0: 20px
+}
+.other-list li{
+	height: 100%;
+	width: 25%;
+	padding: 20px;
+}
+.other-list li a{
+    display: block;
+    background: #3C3C3C;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+/*登录尾部*/
+/*尾部菜单*/
+.login-footer .widget{
+	text-align: center;
+}
+.login-footer a{
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+.login-footer .content.tag-cloud a:hover{
+	text-decoration: underline;
+}
+/*登录页尾部*/
+.login-footer {
+    background: #fff;
+    padding: 75px 0 0;
+}

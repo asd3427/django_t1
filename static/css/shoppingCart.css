@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.main{
+	background: rgb(239,239,239);
+}
+/*购物车顶部图标*/
+.shopping-cart .shopping-cart-icon{
+	height: 45px;
+	line-height: 45px;
+    font-size: 20px;
+}
+.shopping-cart .checkbox{
+	margin: 0;
+}
+.shopping-cart .checkbox input[type=checkbox]+img{
+	height: 80px;
+	width: 80px;
+}
+/*防止选框在文字上面的绝对位置*/
+.shopping-cart .checkbox input[type=checkbox]{
+		margin-right: 8px;
+		position: relative;
+}
+/*购物车头部标题栏*/
+.shopping-cart .shopping-cart-title .col-xs-12{
+	height: 50px;
+	line-height: 50px;
+	background: rgb(228,228,228);
+	box-sizing: border-box;
+	text-indent: 12px;
+}
+/*店铺模块*/
+.shopping-cart .shopping-cart-store{
+	background: transparent;
+}
+/*店铺名称*/
+.shopping-cart .shopping-cart-store-name{
+	margin-top: 15px;
+	padding: 0 40px;
+    margin-bottom: 10px;
+}
+.shopping-cart .shopping-cart-store-name label{
+	font: 15px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+/*优惠活动信息*/
+.store-orderinfo-title{
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #d1d1d1;	
+	border-bottom: none;	
+	padding: 0 60px;
+	color: #8b8b8b;;
+}
+/*优惠方式*/
+.store-orderinfo-title .prefer-way{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    width: 40px;
+    text-align: center;
+    background: rgb(246,138,1);
+    border-radius: 4px;
+    color: #fff;
+}
+.prefer-way.huangou:before{
+	content: '换购';
+}
+.prefer-way.manjian:before{
+	content: '满减';
+}
+.Gotothelist{
+	color:#337ab7;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.Gotothelist:before{
+	content: '去凑单>';
+}
+
+/*店铺商品信息*/
+.shopping-cart .shopping-cart-store-orderinfo{
+    padding: 0 25px;
+    padding-top: 15px;
+	display: block;
+	min-height: 150px;
+	border: 1px solid #d1d1d1;	
+	margin-bottom: 10px;
+}
+.shopping-cart-store-orderinfo .col-xs-12 span{
+	 display: inline-block;
+}
+/*商品全称*/
+.shopping-cart-store-orderinfo .col-xs-12 span.product-name{
+    width: 50%;
+    padding-left: 20px;
+    color: #000;
+}
+/*商品属性*/
+.shopping-cart-store-orderinfo .property span{
+    color: #9c9c9c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+/*价格*/
+.shopping-cart-store-orderinfo .price span:before{
+    content: '¥';
+}
+.shopping-cart-store-orderinfo .price span.old-price{
+    text-decoration: line-through;
+}
+/*数量*/
+.shopping-cart-store-orderinfo .num{
+	text-align: center;
+}
+.shopping-cart-store-orderinfo .num input{
+	width: 40px;
+	text-align: center;
+}
+/*合计*/
+.shopping-cart-store-orderinfo .count:before,
+.all-count:before{
+	content: '¥';
+}
+.shopping-cart-store-orderinfo .count{
+	text-indent: 20px;
+    font-weight: 700;
+}
+
+/*操作*/
+.shopping-cart-store-orderinfo .option span{
+    cursor: pointer;
+    display: block;
+    text-align: right;
+}
+.shopping-cart-store-orderinfo .option span:hover{
+	text-decoration: underline;
+}
+
+/*尾部文字居中*/
+.shopping-cart .shopping-cart-foot{
+	height: 50px;
+	line-height: 50px;
+	background: rgb(228,228,228);
+	box-sizing: border-box;
+	text-indent: 12px;
+	margin-bottom: 40px;
+}
+.shopping-cart .shopping-cart-foot .col-xs-12{
+	padding: 0;
+	text-align: center;
+}
+.shopping-cart .shopping-cart-foot .all-count{
+	font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.shopping-cart .shopping-cart-foot .submit-order{
+	color: #fff;
+	font-size: 20px;
+	text-align: right;
+}
+.submit-order .btn.btn-default{
+    height: 53px;
+    width: 150px;
+}
+
+
