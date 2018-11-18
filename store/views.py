@@ -3,6 +3,7 @@ import os
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.template import loader
+from .models import Product
 
 # 笔记 以隐藏
 # Create your views here.
@@ -81,3 +82,12 @@ from django.template import loader
 #     context = {"html": "123", "list": [1, 2]}  # 类似print 的功能直接输出
 #     html = template.render(context)
 #     return HttpResponse(html)
+
+def detail(request):
+    """
+    商品详情
+    """
+
+    id = request.GET.get("id","") #先从request 接收参数
+    obj = Product.objects.get(id=id)# 然后将参数丢给模型去查询
+    return render(request,"detail.html",locals())

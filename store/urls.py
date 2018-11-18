@@ -1,5 +1,5 @@
 from django.conf.urls import url
-#from .views import user, upload
+from .views import detail
 
 urlpatterns = [
     # url(r'^upload$', upload),
@@ -10,4 +10,5 @@ urlpatterns = [
     # url(r'^login$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
     # url(r'^reg$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
     # url(r'^logout$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
+    url(r'detail.html', detail)
 ]
