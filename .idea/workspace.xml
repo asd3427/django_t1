@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fce36b9-e870-4c46-ac15-3687508b1601" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0002_auto_20181128_1428.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0003_auto_20181128_1746.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0004_auto_20181128_1748.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/migrations/0005_auto_20181128_1800.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_t1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_t1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_t1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_t1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
-    </list>
+    <list default="true" id="7fce36b9-e870-4c46-ac15-3687508b1601" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/django_t1$loader.coverage" NAME="loader Coverage Results" MODIFIED="1542545839826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/lib/python3.6/unittest" />
-    <SUITE FILE_PATH="coverage/django_t1$test.coverage" NAME="test Coverage Results" MODIFIED="1542543321368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/django_t1$Test__store_tests_StoreViewsTest_test_detail.coverage" NAME="Test: store.tests.StoreViewsTest.test_detail Coverage Results" MODIFIED="1543373238074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_t1$settings.coverage" NAME="settings Coverage Results" MODIFIED="1543636333971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_t1" />
+    <SUITE FILE_PATH="coverage/django_t1$loader.coverage" NAME="loader Coverage Results" MODIFIED="1542545839826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/usr/lib/python3.6/unittest" />
     <SUITE FILE_PATH="coverage/django_t1$Test__store_tests.coverage" NAME="Test: store.tests Coverage Results" MODIFIED="1543388514732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/django_t1$Test__store_tests_TemplatesTest.coverage" NAME="Test: store.tests.TemplatesTest Coverage Results" MODIFIED="1542545995666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_t1$test.coverage" NAME="test Coverage Results" MODIFIED="1542543321368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/django_t1$Test__store_tests_TemplatesTest_setUp.coverage" NAME="Test: store.tests.TemplatesTest.setUp Coverage Results" MODIFIED="1542546589796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_t1$Test__store_tests_TemplatesTest.coverage" NAME="Test: store.tests.TemplatesTest Coverage Results" MODIFIED="1542545995666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -135,52 +120,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_t1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="411">
+              <caret line="48" column="63" lean-forward="false" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding>
-                <marker date="1543633682438" expanded="true" signature="216:410" ph="..." />
-                <marker date="1543633682438" expanded="true" signature="439:633" ph="..." />
-                <marker date="1543633682438" expanded="true" signature="2718:2723" ph="..." />
-              </folding>
+            <state relative-caret-position="62">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/fields.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="403">
+              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -188,29 +152,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="143">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_t1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="761">
+              <caret line="128" column="43" lean-forward="false" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/MALL/mall/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/MALL/mall/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1023">
+              <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="170" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_t1/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="31">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +224,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wit</find>
       <find>href=&quot;css/</find>
       <find>src=&quot;img/</find>
       <find>jpg&quot; /&gt;</find>
@@ -257,6 +253,7 @@
       <find>type</find>
       <find>app</find>
       <find>category</find>
+      <find>UPLOA</find>
     </findStrings>
     <replaceStrings>
       <replace>src={% static &quot;img</replace>
@@ -303,9 +300,10 @@
         <option value="$PROJECT_DIR$/store/admin.py" />
         <option value="$PROJECT_DIR$/requirements" />
         <option value="$PROJECT_DIR$/store/models.py" />
-        <option value="$PROJECT_DIR$/django_t1/settings.py" />
         <option value="$PROJECT_DIR$/store/urls.py" />
         <option value="$PROJECT_DIR$/django_t1/urls.py" />
+        <option value="$PROJECT_DIR$/django_t1/wsgi.py" />
+        <option value="$PROJECT_DIR$/django_t1/settings.py" />
       </list>
     </option>
   </component>
@@ -315,19 +313,28 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="497" />
-    <option name="y" value="157" />
-    <option name="width" value="551" />
-    <option name="height" value="396" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,6 +360,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,6 +371,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -378,7 +387,6 @@
   </component>
   <component name="RunManager" selected="Django server.django_t1">
     <configuration name="Test: store.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="django_t1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -389,16 +397,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="django_t1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="TARGET" value="store.tests" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="Test: store.tests.StoreViewsTest.test_detail" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="django_t1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -409,16 +416,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="django_t1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="TARGET" value="store.tests.StoreViewsTest.test_detail" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="Test: store.tests.TemplatesTest" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="django_t1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -429,16 +435,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="django_t1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="TARGET" value="store.tests.TemplatesTest" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="Test: store.tests.TemplatesTest.setUp" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <module name="django_t1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -449,19 +454,34 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="django_t1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="TARGET" value="store.tests.TemplatesTest.setUp" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
-    <configuration name="detail.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/store/detail.html">
-      <method v="2" />
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/django_t1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_t1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/django_t1/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="django_t1" type="Python.DjangoServer" factoryName="Django server">
-      <module name="django_t1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -473,6 +493,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django_t1" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -482,25 +503,27 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Django server.django_t1" />
-      <item itemvalue="Django tests.Test: store.tests.TemplatesTest" />
-      <item itemvalue="Django tests.Test: store.tests" />
-      <item itemvalue="Django tests.Test: store.tests.TemplatesTest.setUp" />
-      <item itemvalue="Django tests.Test: store.tests.StoreViewsTest.test_detail" />
-      <item itemvalue="JavaScript Debug.detail.html" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django tests.Test: store.tests" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: store.tests.TemplatesTest.setUp" />
+      <item index="2" class="java.lang.String" itemvalue="Django tests.Test: store.tests.StoreViewsTest.test_detail" />
+      <item index="3" class="java.lang.String" itemvalue="Django tests.Test: store.tests.TemplatesTest" />
+      <item index="4" class="java.lang.String" itemvalue="Django server.django_t1" />
+      <item index="5" class="java.lang.String" itemvalue="Python.settings" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Django tests.Test: store.tests" />
-        <item itemvalue="JavaScript Debug.detail.html" />
-        <item itemvalue="Django tests.Test: store.tests.StoreViewsTest.test_detail" />
-        <item itemvalue="Django tests.Test: store.tests.TemplatesTest.setUp" />
-        <item itemvalue="Django tests.Test: store.tests.TemplatesTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.settings" />
+        <item index="1" class="java.lang.String" itemvalue="Django tests.Test: store.tests.TemplatesTest" />
+        <item index="2" class="java.lang.String" itemvalue="Django tests.Test: store.tests.StoreViewsTest.test_detail" />
+        <item index="3" class="java.lang.String" itemvalue="Django tests.Test: store.tests.TemplatesTest.setUp" />
+        <item index="4" class="java.lang.String" itemvalue="Django tests.Test: store.tests" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -557,56 +580,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="497" y="157" width="551" height="396" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5463511" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="1.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.428125" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="manage.py@django_t1" order="10" weight="0.34479168" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32916668" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32916668" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32916668" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32965213" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32965213" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.304679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15458423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12424075" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@django_t1" order="1" weight="0.3390558" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32916668" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="6" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.30729166" />
-      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -614,21 +610,63 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.6/os.py">
+    <entry file="file://$PROJECT_DIR$/django_t1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/core/checks/urls.py">
+    <entry file="file://$PROJECT_DIR$/store/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="62">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/store/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_t1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/os.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/core/checks/urls.py" />
     <entry file="file://$PROJECT_DIR$/templates/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -645,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -674,14 +712,14 @@
     <entry file="file://$PROJECT_DIR$/templates/orderCenter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="161" column="87" selection-start-line="161" selection-start-column="87" selection-end-line="161" selection-end-column="87" />
+          <caret line="161" column="87" lean-forward="false" selection-start-line="161" selection-start-column="87" selection-end-line="161" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="89" column="82" selection-start-line="89" selection-start-column="78" selection-end-line="89" selection-end-column="82" />
+          <caret line="89" column="82" lean-forward="false" selection-start-line="89" selection-start-column="78" selection-end-line="89" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -702,183 +740,146 @@
     <entry file="file://$PROJECT_DIR$/templates/shoppingCart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="204" column="54" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
+          <caret line="204" column="54" lean-forward="false" selection-start-line="204" selection-start-column="54" selection-end-line="204" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/temp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3192">
-          <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5eff2b0e-c32e-4b8e-905d-e54869112eaa/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://7324f82d-9075-4507-b593-603fb334b9ba/schema/main/table/store_product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/test/testcases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3.6/unittest/loader.py" />
+    <entry file="das://7324f82d-9075-4507-b593-603fb334b9ba/schema/main/table/store_product" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/test/testcases.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py" />
     <entry file="file://$PROJECT_DIR$/store/migrations/0002_auto_20181128_1428.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="22" />
+          <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="3" selection-end-column="28" />
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/contrib/admin/sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2463">
-          <caret line="83" column="71" lean-forward="true" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/contrib/admin/sites.py" />
     <entry file="file://$PROJECT_DIR$/store/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
-          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1543371823106" expanded="true" signature="3104:3109" ph="..." />
-          </folding>
+          <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/conf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/fields.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/conf/__init__.py" />
     <entry file="file://$PROJECT_DIR$/store/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="403">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1543388358438" expanded="true" signature="366:375" ph="..." />
-            <marker date="1543388358438" expanded="true" signature="656:665" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_t1/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_t1/urls.py">
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/__init__.py" />
+    <entry file="file://$USER_HOME$/Desktop/MALL/test_mall/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="-3398">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/MALL/mall/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_t1/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <marker date="1543633682438" expanded="true" signature="216:410" ph="..." />
-            <marker date="1543633682438" expanded="true" signature="439:633" ph="..." />
-            <marker date="1543633682438" expanded="true" signature="2718:2723" ph="..." />
-          </folding>
+        <state relative-caret-position="62">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/ckeditor_uploader/__init__.py">
+    <entry file="file://$USER_HOME$/Desktop/MALL/mall/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="1023">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="170" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_t1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="48" column="63" lean-forward="false" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_t1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="128" column="43" lean-forward="false" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

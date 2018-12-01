@@ -46,5 +46,5 @@ urlpatterns = [
     url('^temp.html$', TemplateView.as_view(template_name="temp.html"), ),
     url(r"^store/", include("store.urls")),
     url(r'^admin/', admin.site.urls),  # 静态路由
-    url(r"^admin_ckeditor/", include("ckeditor_uploader.urls")),
+    url(r'^admin_ckeditor/', include("ckeditor_uploader.urls"))
 ]

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'store.apps.StoreConfig',  # 包名 模块名 类别名
     'ckeditor',
     'ckeditor_uploader',
+
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),
                     ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 这裡是存文件的目录上传功能
+
+CKEDITOR_UPLOAD_PATH = 'upload/editor/'
+PRODUCT_UPLOAD_PATH = 'upload/product/'
+BAND_UPLOAD_PATH = 'upload/band/'
+RECOMMEND_UPLOAD_PATH = 'upload/recommend/'

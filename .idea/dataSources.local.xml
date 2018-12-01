@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="db.sqlite3" uuid="5eff2b0e-c32e-4b8e-905d-e54869112eaa">
-      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" family="SQLITE" exact-version="3.25.1">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
@@ -11,7 +11,7 @@
       <introspection-schemas>*:</introspection-schemas>
     </data-source>
     <data-source name="Django default" uuid="7324f82d-9075-4507-b593-603fb334b9ba">
-      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" family="SQLITE" exact-version="3.25.1">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
