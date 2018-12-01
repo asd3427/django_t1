@@ -1,0 +1,2 @@
+django = 1.11.2
+django-ckeditor #附文本编译器

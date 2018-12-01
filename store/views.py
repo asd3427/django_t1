@@ -4,6 +4,8 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.template import loader
 from .models import Product
+from django.shortcuts import *
+
 
 # 笔记 以隐藏
 # Create your views here.
@@ -86,8 +88,12 @@ from .models import Product
 def detail(request):
     """
     商品详情
+
     """
 
-    id = request.GET.get("id","") #先从request 接收参数
-    obj = Product.objects.get(id=id)# 然后将参数丢给模型去查询
-    return render(request,"detail.html",locals())
+    id = request.GET.get("id", "")  # 先从request 接收参数
+    if not id.isdigit():
+        raise Http404()# 首先判断是不是数字不是数字返回404
+    obj = get_object_or_404(Product, id=id)  # 然后将参数丢给模型去查询 如果拿到数据渲染模板 如果没有拿到数据返回404
+
+    return render(request, "detail.html", locals())

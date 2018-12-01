@@ -10,5 +10,5 @@ urlpatterns = [
     # url(r'^login$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
     # url(r'^reg$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
     # url(r'^logout$', user, {"name": "_chen", "id": ""}),  # 这三个url 前缀是一样的
-    url(r'detail.html', detail)
+    url(r'detail.html', detail),
 ]
